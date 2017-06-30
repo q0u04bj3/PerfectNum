@@ -3,15 +3,25 @@ from PerfectNum import is_perfect
 
 class PerfectNumTest(unittest.TestCase):
     
-    def test_is_perfect1(self):
-        self.assertEqual(is_perfect(5), False)
+    def test_is_perfect_num(self):
+        expected_value = True
+        value = is_perfect(6)
+        self.assertEqual(expected_value, value)
     
-    def test_is_perfect2(self):
-        self.assertEqual(is_perfect(6), True)
+    def test_is_perfect_num2(self):
+        expected_value = True
+        value = is_perfect(28)
+        self.assertEqual(expected_value, value)
 
-    def test_is_perfect3(self):
-        self.assertEqual(is_perfect(7), False)
+    def test_is_perfect_num3(self):
+        expected_value = False
+        value = is_perfect(129)
+        self.assertEqual(expected_value, value)
 
-        
+    def test_is_perfect_num3(self):
+        expected_value = False
+        value = is_perfect(7884)
+        self.assertEqual(expected_value, value)
+
 if __name__ == '__main__':
     unittest.main()
