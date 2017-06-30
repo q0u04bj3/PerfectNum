@@ -3,7 +3,7 @@ from PerfectNum import is_perfect
 
 class PerfectNumTest(unittest.TestCase):
     
-    def test_is_perfect_zero(self):
+    def test_is_perfect_negativeNum(self):
         expected_value = False
         value = is_perfect(-1)
         self.assertEqual(expected_value, value)
